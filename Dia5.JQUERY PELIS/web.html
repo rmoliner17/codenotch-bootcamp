@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="clases.js"></script>
+    <link rel="stylesheet" href="web.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="myRow">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">PelisPelis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Novedades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button  class="btn btn-outline-light" onclick="mostrarPelis()" id="nuestrasPelis" type="submit">Nuestras Pelis </a><i class="fas fa-film"></i> </button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+   
+
+
+<div class="myRow">
+    <div class="row" id="carrusel1">
+        <script>
+            for(let i = 0; i<todasPelis.peliculas.length;i++){
+                addTarjeta(todasPelis.peliculas[i], "carrusel1")
+            }
+        </script>
+
+    </div>
+</div>
+
+<div class="myRow" >
+<div class="row">
+    <form action="">
+            <input id="titulo" type="text" placeholder= "Titulo de la pelicula"> 
+            <input id="anyoEstreno" type="number"placeholder=" Año de estreno" >
+            <input id="nacionalidad" type="text"placeholder="Nacionalidad">
+            <input id="genero" type="text"placeholder="Genero">
+            <button class="btn btn-outline-dark" type="button" onclick="recogerDatos()">Buscar</button>
+    </form>
+</div>
+</div>
+
+<div class="myRow">
+    <div class="row" id="carrusel2">
+
+    </div>
+</div>
+
+
+
+
+
+<div class="myRow" id="tuPeli"></div>        
+    
+
+</body>
+</html>
