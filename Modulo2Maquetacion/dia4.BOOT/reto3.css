@@ -1,0 +1,12 @@
+/* .espacio{
+    position: relative
+} */
+
+.myRow{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+

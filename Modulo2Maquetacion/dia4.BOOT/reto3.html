@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="reto3.css">
+    <script src="reto3.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-12">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid sticky-top">
+                <a class="navbar-brand" href="#">CompraCompra.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Novedades
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button  class="btn btn-outline-light" type="submit"><a href="misAficiones.html">aqui</a>Carrito <i class="fas fa-shopping-cart"></i>  </button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="myRow">
+
+        <div class="row">
+
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://nba.innvictus.com/wp-content/uploads/2017/10/PHI-BACK.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Camiseta NBA</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(nba)"class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">10€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://www.ferrersport.com/sites/default/files/productos/textil/2019/928437-895/928437-895-PHSFH001-1000.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sudadera Nike</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(sudaderaNike)"class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">20€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://www.forumsport.com/medias/medias-1000514517-00-P-X-20190117090800.jpg?context=bWFzdGVyfGltYWdlc3w5NzYyMHxpbWFnZS9qcGVnfGltYWdlcy9oYzgvaDQ3LzkwMDc4MDY3NDI1NTguanBnfGRiYmI1ODRiZWNjYWRkYzFkMjU3MTQ4NDdjYzg1NDczYWNkMjIwMGI2ZmI3ZGM3YzY3MGRmODYzOTVhODY1ZGU" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Abrigo Gris</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(abrigoGris)" class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">30€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://camisetasdefutbolbaratas.shop/wp-content/uploads/2019/11/chaqueta-azul-real-madrid-2021.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sudadera RM</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" href="#" onclick="anyadir(sudaderaRM)"class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">20€</a>
+                    </div>
+                </div>
+    
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="myRow">
+
+        <div class="row">
+
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://www.outlet-sport.es/wp-content/uploads/2020/12/chaqueta-tnf.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Abrigo Rojo</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" onclick="anyadir(abrigoRojo)" class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">30€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://static.lystit.com/static/n/static-img/the-lyst-index/2018/q3/yeezy-boost-350-v2-butter-sneakers.ee4d70f125a0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yeezys</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(yeezy)"class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">40€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://www.tirolibresantiago.com/uploads/media_items/149132-1-1000x1000.original.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chandal nike</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(chandalNike)"class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">50€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://www.neweracap.co.uk/globalassets/products/a12226_331/12590898/12590898-left.jpg/?w=425" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chandal Lakers</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(chandalLakers)" class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">50€</a>
+                    </div>
+                </div>
+    
+            </div>
+        
+        </div>
+
+        
+    </div>
+    <div class="myRow">
+
+        <div class="row">
+
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://static2.privatesportshop.com/img/p/3198707-9777779-thickbox.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chandal nike azul</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(chandalNikeAzul)" class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">50€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://ae01.alicdn.com/kf/H7f764d71928341c58dcadb71b8d558612/NAGRI-Kanye-pantalones-de-ch-ndal-CPFM-XYZ-para-hombre-de-Hip-Hop-Joggers-pantalones-bombachos.jpg_q50.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pantalon de pijama</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(pijama)"class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">30€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://www.runnerinn.com/f/13752/137527731/nike-air-zoom-pegasus-37-gs.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Zapatillas rojas</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(zapatillas)" class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">30€</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="col">
+    
+                <div class="card imagenes1 bg-light" style="width: 14rem;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61039W-cqwL._SL1000_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Camiseta Wade</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a  href="#" onclick="anyadir(wade)" class="btn btn-dark">Añadir al carrito</a>  <a href="#" class="btn btn-success">30€</a>
+                    </div>
+                </div>
+    
+            </div>
+        
+        </div>
+
+        
+    </div>
+    <!-- <div class="row espacio">
+
+       
+            class="card-img-top" alt="...">
+           ard col imagenes1 bg-light" style="width: 14rem;">
+            <img src="" class="card-img-top" alt="...">
+      
+            <img src="" class="card-img-top" alt="...">
+    
+            <img src="" class="card-img-top" alt="...">
+    
+        </div> 
+        <div class="card col imagenes1 bg-light" style="width: 14rem;">
+            <img src="" class="card-img-top" alt="...">
+    
+        </div> 
+        <div class="card col imagenes1 bg-light" style="width: 14rem;">
+            <img src=" class="card-img-top" alt="...">
+     
+        </div>
+        <div class="row espacio">
+            <div class="card col imagenes1 bg-light" style="width: 14rem;">
+                <img src="" class="card-img-top" alt="...">
+            card col imagenes1 bg-light" style="width: 14rem;">
+                <img src="" class="card-img-top" alt="...">
+                
+            </div> 
+            <div class="card col imagenes1 bg-light" style="width: 14rem;">
+                <img src="" class="card-img-top" alt="...">
+               
+                <img src="https://ae01.alicdn.com/kf/H7f764d71928341c58dcadb71b8d558612/NAGRI-Kanye-pantalones-de-ch-ndal-CPFM-XYZ-para-hombre-de-Hip-Hop-Joggers-pantalones-bombachos.jpg_q50.jpg" class="card-img-top" alt="...">
+           
+            
+    </div> -->
+
+
+
+</body>
+</html>
